@@ -27,19 +27,19 @@ const fs = global.nodemodule["fs-extra"];
 var link = ["https://i.ibb.co/d57n469/image.jpg"];
 var callback = () => api.sendMessage({body:`➳Bot and Admin Information
 
-➜༻𝐎𝐖𝐍𝐄𝐑:- ☞𝐏𝐑𝐈𝐌𝐂𝐄 𝐌𝐄𝐆𝐇𝐖𝐀𝐍𝐒𝐈𝗜☜ ༺
-༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠𝙿𝚁𝙸𝙽𝙲𝙴 𝙼𝙴𝙶𝙷𝚆𝙰𝙽𝚂𝙸𝗜〠.༒
+➜༻𝐎𝐖𝐍𝐄𝐑:- ☞𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕☜ ༺
+༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠𝚂𝚄𝚂𝙷𝙸𝙻 𝚈𝙰𝙳𝙰𝚅𝗜〠.༒
 
-༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ https://www.facebook.com/profile.php?id=100080287361043 ☜ 
+༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ https://www.facebook.com/share/19Ufmnhu6V/ ☜ 
 
 ༻𝘠𝘰𝘶𝘵𝘶𝘣𝘦 𝘭𝘪𝘯𝘬༺:- 
-☞ https://youtube.com/@princeking07?si=4hKS88ZfB1Fsqb9d ☜
+☞ https://www.youtube.com/@Entertainment.story ☜
 
 ֎𝘍𝘰𝘳 𝘈𝘯𝘺 𝘒𝘪𝘯𝘥 𝘖𝘧 𝘏𝘦𝘭𝘱 𝘫𝘰𝘪𝘯 𝘞𝘱 𝘎𝘳𝘰𝘶𝘱֍:-
 
 ☞ NO TQ ☜
 
- ֎𝘊𝘰𝘯𝘵𝘢𝘤𝘵 𝘔𝘦 𝘖𝘯 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱֍ :-  ☞6378xxxx89 ☜
+ ֎𝘊𝘰𝘯𝘵𝘢𝘤𝘵 𝘔𝘦 𝘖𝘯 𝘞𝘩𝘢𝘵𝘴𝘈𝘱𝘱֍ :-  ☞9910xxxx63 ☜
 
 »Bot Name : 【${global.config.BOTNAME}】
 
