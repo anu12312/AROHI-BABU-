@@ -28,6 +28,6 @@ module.exports.run = async function({ api, event, getText,args }) {
           api.removeUserFromGroup(listUserID[id], event.threadID)
         }
       })
-    } else return api.sendMessage(ये कमांड सिर्फ मेरे आरिफ बाबू हो यूज्ड कर सकते हैं 😐✌️', event.threadID, event.messageID);
+    } else return api.sendMessage(ये कमांड सिर्फ मेरे सुशील बाबू हो यूज्ड कर सकते हैं 😐✌️', event.threadID, event.messageID);
   })
 }
