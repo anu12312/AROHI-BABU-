@@ -1,5 +1,5 @@
 const emojiResponses = {
-  "ritik beta": {
+  "golu beta": {
     "OWNER": [
       "Han papa  🥺",
       "Papa g ap kaha the 😀",
@@ -13,8 +13,8 @@ const emojiResponses = {
     ],
     "FEMALE": [
       "Meri ami hogi ",
-      "Mere Prince papa ka GF hai",
-      "Mere Prince papa single hai ap mere meri ami ban jaye ge?","Han ami kaho ke ap kase hai?",
+      "Mere Sushil papa ka GF hai",
+      "Mere Sushil papa single hai ap mere meri ami ban jaye ge?","Han ami kaho ke ap kase hai?",
       "Ap kase hai ami?",
       "Ami g Aaj Ka mood kasa hai ?"
     ]
@@ -43,7 +43,7 @@ const emojiResponses = {
       "Papa aapke sar Mein taklif honi chahie kya main aapka sar Nahin dabata hun😹❤️",
       "Papa Apne dahin li hai 🤔",
       "Papa Meri Ami se kaho kya tum mujhse naraz to Nahin ho🤭",
-      "Prince papa sirf Mera Hai 😒",
+      "Sushil papa sirf Mera Hai 😒",
       "Papa chocolate khilayega 🤩❤️🤭",
       "Papa mummy kahan hai🫣",
       "Papa Mujhe logon ke dilon se khelna hai 🤣"
