@@ -1,3 +1,19 @@
+const axios = require("axios");
+
+module.exports.config = {
+  name: "Shona",
+  version: "2.1.0",
+  hasPermssion: 0,
+  credits: "Amir",
+  description: "Shona - Global AI that replies only on message replies (Roman Urdu)",
+  commandCategory: "AI",
+  usePrefix: false,
+  usages: "[Reply to Shona's message]",
+  cooldowns: 2,
+};
+
+let userMemory = {};
+let isActive = true;
 ```javascript
 const botReply = (userMessage) => {
     let reply;
