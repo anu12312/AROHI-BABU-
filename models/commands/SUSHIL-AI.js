@@ -14,14 +14,6 @@ const natural = require('natural');
 const tokenizer = new natural.WordTokenizer();
 const analyzer = new natural.SentimentAnalyzer('English', natural.PorterStemmer, 'afinn');
 
-// ✅ GLOBAL: Reply-only mode
-module.exports.handleEvent = async function ({ api, event }) {
-  const { threadID, messageID, senderID, body, messageReply } = event;
-  if (!isActive || !body || senderID == api.getCurrentUserID()) return;
-  
-// ❌ Only reply if user is replying to a message from the bot
-  if (!messageReply || messageReply.senderID !== api.getCurrentUserID()) return;
-  
 // Function to handle incoming messages
 function handleMessage(senderPsid, message) {
   // Tokenize the message
