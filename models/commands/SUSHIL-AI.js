@@ -1,9 +1,10 @@
+```javascript
 const botReply = (userMessage) => {
     let reply;
 
     switch (userMessage.toLowerCase()) {
         case "hi":
-            reply = "Hello! sir/madam how can I assist you today?";
+            reply = "Hello! How can I assist you today?";
             break;
         case "how are you?":
             reply = "I'm doing great, thanks for asking!";
@@ -21,7 +22,7 @@ const botReply = (userMessage) => {
 
 // Example usage:
 const userMessage = "hi";
-console.log(botReply(userMessage));  // Output: "Hello! sir/maidam How can I assist you today?"
+console.log(botReply(userMessage));  // Output: "Hello! How can I assist you today?"
 ```
 
 This code defines a function `botReply` that takes a user's message as input and returns a suitable reply based on predefined responses for common queries or greetings. Adjust the responses and add more cases
