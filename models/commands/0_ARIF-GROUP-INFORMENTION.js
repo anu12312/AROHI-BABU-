@@ -7,7 +7,7 @@ module.exports.config = {
 	credits: "ARIF BABU",
 	description: "THIS BOT WAS MADE BY MR ARIF BABU",
 	commandCategory: "GROUP INFORMETION", 
-	usages: "PREFIX", 
+	usages: "prefix", 
 	cooldowns: 0,
 	dependencies: [] 
 };
