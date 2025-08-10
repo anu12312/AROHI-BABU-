@@ -50,7 +50,7 @@ module.exports. run = function({ api, event, args, getText }) {
     const page = parseInt(args[0]) || 1;
     const numberOfOnePage = 8;
     let i = 0;
-    let msg = "┏━━━━━┓\n    SUSHIL YADAV                  ✧═══•❁🥱❁•═══✧\n┗━━━━━┛\n\n✧═══❁♥️COMMAND LIST ♥️❁═══✧\n\n";
+    let msg = "┏━━━━━┓\n    ANURAG MISHRA                  ✧═══•❁🥱❁•═══✧\n┗━━━━━┛\n\n✧═══❁♥️COMMAND LIST ♥️❁═══✧\n\n";
 
     for (var [name, value] of (commands)) {
       name += 
