@@ -297,11 +297,11 @@ if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")
    };
 
    if ((event.body.toLowerCase() == "does the bot love you") || (event.body.toLowerCase() == "does the bot love you")) {
-     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛🥰सुशील यादव❤️ *★᭄ ཫ༄𒁍≛ 』====🌸__💙 Yes I love you and everyone so much", threadID);
+     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛🥰अनुराग मिश्रा❤️ *★᭄ ཫ༄𒁍≛ 』====🌸__💙 Yes I love you and everyone so much", threadID);
    };
 
    if ((event.body.toLowerCase() == "bot go to sleep") || (event.body.toLowerCase() == "bot goes to sleep")) {
-     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛सुशील ❤️यादव❤ *★᭄ ཫ༄𒁍≛ 』====🌸__💙I'm a bot, you're the one who should go to sleep <3", threadID);
+     return api.sendMessage("🌸====『*★᭄𝗖𝗿𝗲𝗱𝗶𝘁'𝘀  ཫ༄𒁍≛अनुराग ❤️मिश्रा❤ *★᭄ ཫ༄𒁍≛ 』====🌸__💙I'm a bot, you're the one who should go to sleep <3", threadID);
    };
 
    if ((event.body.toLowerCase() == "+") || (event.body.toLowerCase() == "#")) {
@@ -358,7 +358,7 @@ if ((event.body.toLowerCase() == "😈") || (event.body.toLowerCase() == "😈")
       ${rand}
       
       
-      🌸==『*★𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 𒁍 『٭』 ☞ ▄︻デ ✦❥⋆⃝𝐒𝐔𝐒𝐇𝐈𝐋 𝐘𝐀𝐃𝐀𝐕 ✦══━一 ☜『٭』`
+      🌸==『*★𝗖𝗿𝗲𝗱𝗶𝘁'𝘀 𒁍 『٭』 ☞ ▄︻デ ✦❥अनुराग मिश्रा✦══━一 ☜『٭』`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
