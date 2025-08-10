@@ -1,20 +1,20 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "biryani",
+	name: "khana_kha_lo",
     version: "1.0.1",
 	hasPermssion: 0,
 	credits: "𝙋𝙧𝙞𝙮𝙖𝙣𝙨𝙝 𝙍𝙖𝙟𝙥𝙪𝙩", 
 	description: "hihihihi",
 	commandCategory: "no prefix",
-	usages: "biryani",
+	usages: "khana_kha_lo",
     cooldowns: 5, 
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("BIRYANI")==0 || event.body.indexOf("Biryani")==0 || event.body.indexOf("biryani")==0 || event.body.indexOf(".biryani")==0) {
+	if (event.body.indexOf("KHANA KHA LO")==0 || event.body.indexOf("Khana kha lo")==0 || event.body.indexOf("khana kha lo")==0 || event.body.indexOf(".khana kha lo")==0) {
 		var msg = {
-				body: "💝 YE LO BBY BIRYANI KHAO 🥗\n\n(-𝐌𝐚𝐝𝐞 𝐁𝐲 𝗠𝗿..𝐒𝐮𝐬𝐡𝐢𝐥❤️-)",
+				body: "💝 YE LO BBY KHANA KHAO 🥗\n\n(-𝐌𝐚𝐝𝐞 𝐁𝐲 ANURAG ❤️-)",
 				attachment: 
 fs.createReadStream(__dirname + `/ARIF-BABU/BIRYANI.jpg`)
 			}
@@ -24,4 +24,4 @@ fs.createReadStream(__dirname + `/ARIF-BABU/BIRYANI.jpg`)
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
 
-  }
+	}
