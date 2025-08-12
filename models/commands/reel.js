@@ -1,56 +1,47 @@
 const axios = require("axios");
-const cheerio = require("cheerio");
 
 module.exports.config = {
-    name: "reel",
-    version: "1.0.0",
+    name: "img",
+    version: "1.0.1",
     hasPermssion: 0,
-    credits: "Shivansh",
-    description: "Pinterest se mood based reel bheje",
-    commandCategory: "fun",
-    usages: ".reel <mood>",
-    cooldowns: 5
+    credits: "ANURAG MISHRA",
+    description: "Pinterest se multiple images bheje keyword ke hisaab se",
+    commandCategory: "tools",
+    usages: ".img <keyword>",
+    cooldowns: 3
 };
 
-module.exports.run = async function({ api, event, args }) {
-    if (!args[0]) return api.sendMessage("Bhai mood type kar: sad, funny, romantic...", event.threadID, event.messageID);
-
-    let mood = args.join(" ");
-    let searchURL = `https://www.pinterest.com/search/videos/?q=${encodeURIComponent(mood)}`;
-
+module.exports.run = async ({ api, event, args }) => {
     try {
-        api.sendMessage(`⏳ Ruko bhai, "${mood}" reel la raha hoon...`, event.threadID, event.messageID);
+        const keyword = args.join(" ");
+        if (!keyword) return api.sendMessage("❌ Bhai, keyword bata (jaise: .img cat, .img sunset)", event.threadID, event.messageID);
 
-        let { data } = await axios.get(searchURL, {
-            headers: {
-                "User-Agent": "Mozilla/5.0"
-            }
-        });
+        api.sendMessage(`🔍 "${keyword}" images la raha hoon...`, event.threadID, event.messageID);
 
-        const $ = cheerio.load(data);
-        let videoLinks = [];
+        const res = await axios.get(`https://api.vyturex.com/pinterest?search=${encodeURIComponent(keyword)}`);
 
-        $("video").each((i, el) => {
-            let src = $(el).attr("src");
-            if (src && src.startsWith("https")) videoLinks.push(src);
-        });
-
-        if (videoLinks.length === 0) {
-            return api.sendMessage("❌ Koi reel nahi mili is mood ke liye.", event.threadID, event.messageID);
+        if (!res.data || res.data.length === 0) {
+            return api.sendMessage(`❌ Koi image nahi mili keyword "${keyword}" ke liye.`, event.threadID, event.messageID);
         }
 
-        let randomVideo = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+        // Random 3 images select
+        let attachments = [];
+        let usedIndexes = new Set();
+        while (attachments.length < 3 && usedIndexes.size < res.data.length) {
+            let randomIndex = Math.floor(Math.random() * res.data.length);
+            if (!usedIndexes.has(randomIndex)) {
+                usedIndexes.add(randomIndex);
+                attachments.push(await global.utils.getStreamFromURL(res.data[randomIndex]));
+            }
+        }
+
         api.sendMessage({
-            body: `🎬 "${mood}" mood ki ek reel le bhai!`,
-            attachment: await axios({
-                url: randomVideo,
-                method: "GET",
-                responseType: "stream"
-            }).then(res => res.data)
+            body: `📌 "${keyword}" ka result (3 images):`,
+            attachment: attachments
         }, event.threadID, event.messageID);
 
     } catch (err) {
-        console.log(err);
-        api.sendMessage("⚠️ Error aagya bhai, shayad Pinterest block kar raha hai.", event.threadID, event.messageID);
+        console.error(err);
+        api.sendMessage("⚠ Error aa gaya Pinterest se data laate waqt.", event.threadID, event.messageID);
     }
 };
